@@ -1,0 +1,129 @@
+@import 'utilities.css';
+:root
+{
+    /* #3DCFD3 */
+    --primary: #DC143D;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+
+*
+{
+    padding:0%;
+    margin:0%;
+    box-sizing:border-box;
+}
+
+.container
+{
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* books start */
+/* card */
+.section-heading
+{
+    color: var(--secondary);
+    text-align: center;
+    /* margin-bottom: 0rem; */
+    padding-top: 50px;
+}
+
+.section-heading span
+{
+    color: var(--primary);
+}
+
+.section-heading +p
+{
+    color: var(--ternary);
+    font-family: 'lato',sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+/* end card */
+/* books end */
+
+/* blog */
+section.blog
+{
+    background: var(--dark);
+}
+
+section.blog .section-heading
+{
+    color: var(--pure);
+}
+
+section.blog .card-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+section.blog .card-wrapper .card
+{
+    background: var(--pure);
+    margin: 30px;
+    /* margin-top: -60px; */
+
+}
+
+section.blog .card-wrapper .card .img-wrapper img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.blog .card-wrapper .card .card-content
+{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section.blog .card-wrapper .card .card-content h1
+{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+section.blog .card-wrapper .card .card-content a
+{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+section.blog .card-wrapper .card .card-content a:hover
+{
+    color: var(--primary);
+}
+
+section.blog .card-wrapper .card .card-content span
+{
+    color: var(--ternary);
+    font-size: 0.8rem;
+}
+
+section.blog .card-wrapper .card .card-content p
+{
+    font-family: sans-serif;
+    color: var(--ternary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.blog .card-wrapper .card .card-content a.read-more
+{
+    font-size: 0.8rem;
+}
+/* blog end */ 
+
+section.blog .card-wrapper .card .card-content a:hover
+{
+    color: var(--primary);
+}

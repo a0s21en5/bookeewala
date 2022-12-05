@@ -1,0 +1,377 @@
+:root
+{
+    /* #3DCFD3 */
+    --primary: #DC143D;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+
+body
+{
+    font-family: sans-serif;
+}
+
+*
+{
+    padding:0%;
+    margin:0%;
+    box-sizing:border-box;
+}
+/* header start */
+header
+{
+    background-color: black;
+}
+
+.banner
+{
+    background-image: url(/image/logo/logo.gif);
+    height: 15vw;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 35%;
+    background-attachment: fixed;
+}
+/* header end */
+
+nav
+{
+    display: flex;
+    overflow: hidden;
+    background: var(--ternary);
+    padding: 13px;
+}
+
+nav a
+{
+    text-decoration: none;
+    padding-left: 50px;
+    color: var(--pure);
+    letter-spacing: 3px;
+}
+
+nav a:hover
+{
+    color: var(--primary);
+    transition: 0.3s ease;
+}
+
+
+.container
+{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* mobile/ ipda container */
+@media (min-width:576px)
+{
+    .container
+    {
+        max-width: 540px;
+    }
+}
+@media (min-width:768px)
+{
+    .container
+    {
+        max-width: 720px;
+    }
+}
+@media (min-width:992px)
+{
+    .container
+    {
+        max-width: 960px;
+    }
+}
+@media (min-width:1200px)
+{
+    .container
+    {
+        max-width: 1152px;
+    }
+}
+/* mobile/ ipda container end */
+
+
+/* section all start */
+/* card */
+.section-heading
+{
+    color: var(--secondary);
+    text-align: center;
+    /* margin-bottom: 0rem; */
+    padding-top: 50px;
+}
+
+.section-heading span
+{
+    color: var(--primary);
+}
+
+.section-heading +p
+{
+    color: var(--ternary);
+    font-family: 'lato',sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+/* section all end */
+
+/* OUR books */
+section.book
+{
+    background: var(--light);
+}
+section.book .card-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+}
+section.book .card-wrapper .card
+{
+    position: relative;
+    height: 250px;
+    margin-bottom: 100px;
+}
+
+section.book .card-wrapper .card img
+{
+    height: 130%;
+    width: 110%;
+}
+/* end OUR WORKS */
+
+/* start OUR materials */
+section.materials
+{
+    background: var(--pure);
+}
+section.materials .card-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+}
+section.materials .card-wrapper .card
+{
+    position: relative;
+    height: 250px;
+    margin-bottom: 100px;
+}
+
+section.materials .card-wrapper .card img
+{
+    height: 130%;
+    width: 110%;
+}
+/* end our materials */
+
+/* start our course */
+section.course
+{
+    background: var(--light);
+}
+section.course .card-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+}
+section.course .card-wrapper .card
+{
+    position: relative;
+    height: 250px;
+    margin-bottom: 100px;
+}
+
+section.course .card-wrapper .card img
+{
+    height: 130%;
+    width: 110%;
+}
+/* end our course */
+
+/* start our community */
+section.community
+{
+    background: var(--pure);
+}
+section.community .card-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7rem;
+}
+section.community .card-wrapper .card
+{
+    position: relative;
+    height: 250px;
+    margin-bottom: 100px;
+}
+
+section.community .card-wrapper .card img
+{
+    height: 130%;
+    width: 110%;
+}
+/* end our community */
+
+/* about start */
+img {
+    padding: 10px;
+}
+
+section h5 {
+    margin: 40px;
+}
+
+section.about h2,h3
+{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+section.about
+{
+    background: var(--pure);
+}
+
+section.about 
+{
+    text-align: center;
+}
+
+section.about img
+{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+section.about .social
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+section.about .social a
+{
+    background: var(--ternary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+section.about .social a:hover
+{
+    background: var(--primary);
+}
+section.about .social a img
+{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+/* about end */
+
+/*  start our footer */
+/* footer start*/
+footer 
+{
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a 
+{
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+footer a:hover
+{
+    /* color: var(--primary); */
+    transition: 0.3s ease;
+}
+/*  end our footer */
+
+.site-main-wrapper
+{
+    position: relative;
+}
+/* responsive start */
+/* nav start */
+@media screen and (max-width: 700px)
+{
+    nav
+    {
+        flex-direction: column;
+        padding: 15px 0px;
+    } 
+}
+/* nav end */
+
+@media (max-width:1025px)
+{
+    section.book .card-wrapper
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.materials .card-wrapper
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.course .card-wrapper
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.community .card-wrapper
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:576px)
+{
+    section
+    {
+        padding: 4rem 0;
+    }
+    section.book .card-wrapper
+    {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 4rem;
+    }
+    section.materials .card-wrapper
+    {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 4rem;
+    }
+    section.course .card-wrapper
+    {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 4rem;
+    }
+    section.community .card-wrapper
+    {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 4rem;
+    }
+    
+}
+/* responsive end */
