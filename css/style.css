@@ -28,7 +28,7 @@ header
 
 .banner
 {
-    background-image: url(/image/logo/logo.gif);
+    background-image: url(../image/logo/logo.gif);
     height: 15vw;
     min-height: 100px;
     background-repeat: no-repeat;
